@@ -1,0 +1,716 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jun 26 23:08:58 2026
+# Process ID: 3976
+# Current directory: D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.runs/synth_1
+# Command line: vivado.exe -log TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
+# Log file: D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.runs/synth_1/TOP.vds
+# Journal file: D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TOP.tcl -notrace
+Command: synth_design -top TOP -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16992 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 447.609 ; gain = 95.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOP' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/TOP.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/TOP.v:59]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.runs/synth_1/.Xil/Vivado-3976-pengbowen/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (1#1) [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.runs/synth_1/.Xil/Vivado-3976-pengbowen/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'IBUFG' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20852]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFG' (2#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20852]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.runs/synth_1/.Xil/Vivado-3976-pengbowen/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (3#1) [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.runs/synth_1/.Xil/Vivado-3976-pengbowen/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.runs/synth_1/.Xil/Vivado-3976-pengbowen/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (4#1) [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.runs/synth_1/.Xil/Vivado-3976-pengbowen/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ad_sub' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/ad_sub.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ad_sub' (5#1) [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/ad_sub.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx_data' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/uart_rx_data.v:22]
+	Parameter CMD_SET_P bound to: 8'b00000001 
+INFO: [Synth 8-6157] synthesizing module 'uart_rx_byte' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/uart_rx_data.v:144]
+INFO: [Synth 8-6157] synthesizing module 'Dtrigger' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/uart_rx_data.v:285]
+WARNING: [Synth 8-5788] Register Q_reg in module Dtrigger is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/uart_rx_data.v:293]
+INFO: [Synth 8-6155] done synthesizing module 'Dtrigger' (6#1) [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/uart_rx_data.v:285]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/uart_rx_data.v:163]
+WARNING: [Synth 8-6014] Unused sequential element stop_bit_reg was removed.  [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/uart_rx_data.v:221]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx_byte' (7#1) [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/uart_rx_data.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx_data' (8#1) [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/uart_rx_data.v:22]
+WARNING: [Synth 8-350] instance 'rx_inst' of module 'uart_rx_data' requires 8 connections, but only 7 given [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/TOP.v:96]
+INFO: [Synth 8-6157] synthesizing module 'fft_test' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/fft_test.v:23]
+INFO: [Synth 8-6157] synthesizing module 'xfft_0' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.runs/synth_1/.Xil/Vivado-3976-pengbowen/realtime/xfft_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xfft_0' (9#1) [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.runs/synth_1/.Xil/Vivado-3976-pengbowen/realtime/xfft_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fft_test' (10#1) [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/fft_test.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CAL_POW' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/CAL_POW.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mult_gen_0' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.runs/synth_1/.Xil/Vivado-3976-pengbowen/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_gen_0' (11#1) [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.runs/synth_1/.Xil/Vivado-3976-pengbowen/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CAL_POW' (12#1) [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/CAL_POW.v:23]
+INFO: [Synth 8-6157] synthesizing module 'F_FRE_POW' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/F_FRE_POW.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'F_FRE_POW' (13#1) [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/F_FRE_POW.v:23]
+INFO: [Synth 8-6157] synthesizing module 'majority_vote' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/majority_vote.v:23]
+	Parameter WINDOW_NUM bound to: 8 - type: integer 
+	Parameter CNT_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'majority_vote' (14#1) [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/majority_vote.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dpll_reset' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/dpll_reset.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dpll_reset' (15#1) [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/dpll_reset.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dpll' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/dpll.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mult_gen_1' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.runs/synth_1/.Xil/Vivado-3976-pengbowen/realtime/mult_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_gen_1' (16#1) [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.runs/synth_1/.Xil/Vivado-3976-pengbowen/realtime/mult_gen_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fir_compiler_0' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.runs/synth_1/.Xil/Vivado-3976-pengbowen/realtime/fir_compiler_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fir_compiler_0' (17#1) [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.runs/synth_1/.Xil/Vivado-3976-pengbowen/realtime/fir_compiler_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cordic_0' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.runs/synth_1/.Xil/Vivado-3976-pengbowen/realtime/cordic_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cordic_0' (18#1) [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.runs/synth_1/.Xil/Vivado-3976-pengbowen/realtime/cordic_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dds_compiler_0' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.runs/synth_1/.Xil/Vivado-3976-pengbowen/realtime/dds_compiler_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dds_compiler_0' (19#1) [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.runs/synth_1/.Xil/Vivado-3976-pengbowen/realtime/dds_compiler_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dpll' (20#1) [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/dpll.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_F_FRE_POW'. This will prevent further optimization [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/TOP.v:120]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_dpll_reset'. This will prevent further optimization [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/TOP.v:151]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_inst0'. This will prevent further optimization [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/TOP.v:59]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_ad_sub'. This will prevent further optimization [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/TOP.v:90]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'dpll_inst1'. This will prevent further optimization [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/TOP.v:167]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'dpll_inst0'. This will prevent further optimization [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/TOP.v:157]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_fft'. This will prevent further optimization [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/TOP.v:107]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u1_majority_vote'. This will prevent further optimization [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/TOP.v:136]
+INFO: [Synth 8-6155] done synthesizing module 'TOP' (21#1) [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/TOP.v:23]
+WARNING: [Synth 8-3917] design TOP has port DA2_out[5] driven by constant 0
+WARNING: [Synth 8-3917] design TOP has port DA2_out[4] driven by constant 0
+WARNING: [Synth 8-3917] design TOP has port DA2_out[3] driven by constant 0
+WARNING: [Synth 8-3917] design TOP has port DA2_out[2] driven by constant 0
+WARNING: [Synth 8-3917] design TOP has port DA2_out[1] driven by constant 0
+WARNING: [Synth 8-3917] design TOP has port DA2_out[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 503.797 ; gain = 152.172
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 503.797 ; gain = 152.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 503.797 ; gain = 152.172
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_clk_wiz_0'
+Finished Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_clk_wiz_0'
+Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/mult_gen_1/mult_gen_1/mult_gen_1_in_context.xdc] for cell 'dpll_inst0/u1_mult'
+Finished Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/mult_gen_1/mult_gen_1/mult_gen_1_in_context.xdc] for cell 'dpll_inst0/u1_mult'
+Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/mult_gen_1/mult_gen_1/mult_gen_1_in_context.xdc] for cell 'dpll_inst0/u2_mult'
+Finished Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/mult_gen_1/mult_gen_1/mult_gen_1_in_context.xdc] for cell 'dpll_inst0/u2_mult'
+Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/mult_gen_1/mult_gen_1/mult_gen_1_in_context.xdc] for cell 'dpll_inst1/u1_mult'
+Finished Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/mult_gen_1/mult_gen_1/mult_gen_1_in_context.xdc] for cell 'dpll_inst1/u1_mult'
+Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/mult_gen_1/mult_gen_1/mult_gen_1_in_context.xdc] for cell 'dpll_inst1/u2_mult'
+Finished Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/mult_gen_1/mult_gen_1/mult_gen_1_in_context.xdc] for cell 'dpll_inst1/u2_mult'
+Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0/fir_compiler_0_in_context.xdc] for cell 'dpll_inst0/u1_fir'
+Finished Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0/fir_compiler_0_in_context.xdc] for cell 'dpll_inst0/u1_fir'
+Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0/fir_compiler_0_in_context.xdc] for cell 'dpll_inst0/u2_fir'
+Finished Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0/fir_compiler_0_in_context.xdc] for cell 'dpll_inst0/u2_fir'
+Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0/fir_compiler_0_in_context.xdc] for cell 'dpll_inst1/u1_fir'
+Finished Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0/fir_compiler_0_in_context.xdc] for cell 'dpll_inst1/u1_fir'
+Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0/fir_compiler_0_in_context.xdc] for cell 'dpll_inst1/u2_fir'
+Finished Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0/fir_compiler_0_in_context.xdc] for cell 'dpll_inst1/u2_fir'
+Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'u_clk_wiz_1'
+Finished Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'u_clk_wiz_1'
+Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0/dds_compiler_0_in_context.xdc] for cell 'dpll_inst0/u1_dds'
+Finished Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0/dds_compiler_0_in_context.xdc] for cell 'dpll_inst0/u1_dds'
+Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0/dds_compiler_0_in_context.xdc] for cell 'dpll_inst0/u2_dds'
+Finished Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0/dds_compiler_0_in_context.xdc] for cell 'dpll_inst0/u2_dds'
+Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0/dds_compiler_0_in_context.xdc] for cell 'dpll_inst1/u1_dds'
+Finished Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0/dds_compiler_0_in_context.xdc] for cell 'dpll_inst1/u1_dds'
+Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0/dds_compiler_0_in_context.xdc] for cell 'dpll_inst1/u2_dds'
+Finished Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0/dds_compiler_0_in_context.xdc] for cell 'dpll_inst1/u2_dds'
+Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_inst0'
+Finished Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_inst0'
+Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/xfft_0/xfft_0/xfft_0_in_context.xdc] for cell 'u_fft/u1'
+Finished Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/xfft_0/xfft_0/xfft_0_in_context.xdc] for cell 'u_fft/u1'
+Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'u_CAL_POW/RE_MULT'
+Finished Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'u_CAL_POW/RE_MULT'
+Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'u_CAL_POW/IM_MULT'
+Finished Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'u_CAL_POW/IM_MULT'
+Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/cordic_0/cordic_0/cordic_0_in_context.xdc] for cell 'dpll_inst0/u_cordic'
+Finished Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/cordic_0/cordic_0/cordic_0_in_context.xdc] for cell 'dpll_inst0/u_cordic'
+Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/cordic_0/cordic_0/cordic_0_in_context.xdc] for cell 'dpll_inst1/u_cordic'
+Finished Parsing XDC File [d:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/ip/cordic_0/cordic_0/cordic_0_in_context.xdc] for cell 'dpll_inst1/u_cordic'
+Parsing XDC File [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/constrs_1/new/7020.xdc]
+Finished Parsing XDC File [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/constrs_1/new/7020.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/constrs_1/new/7020.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 875.059 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 875.059 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFG => IBUF: 1 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 875.059 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 875.059 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 875.059 ; gain = 523.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 875.059 ; gain = 523.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for u_clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dpll_inst0/u1_mult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dpll_inst1/u1_mult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dpll_inst0/u2_mult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dpll_inst1/u2_mult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dpll_inst0/u1_fir. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dpll_inst1/u1_fir. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dpll_inst0/u2_fir. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dpll_inst1/u2_fir. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_clk_wiz_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dpll_inst0/u1_dds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dpll_inst1/u1_dds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dpll_inst0/u2_dds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dpll_inst1/u2_dds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ila_inst0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_fft/u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_CAL_POW/IM_MULT. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_CAL_POW/RE_MULT. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dpll_inst0/u_cordic. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dpll_inst1/u_cordic. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 875.059 ; gain = 523.434
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "Q" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "r_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "start_bit" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx_data'
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uart_BUF0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uart_BUF0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Pword" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "s_axis_data_last1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_axis_data_tvalid1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "index_fft" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'bps_DR_reg' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/uart_rx_data.v:164]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                              000
+                 iSTATE0 |                                1 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx_data'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 875.059 ; gain = 523.434
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     48 Bit       Adders := 1     
+	   2 Input     40 Bit       Adders := 4     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 13    
++---Registers : 
+	              160 Bit    Registers := 1     
+	               48 Bit    Registers := 12    
+	               40 Bit    Registers := 3     
+	               32 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 8     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 13    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---Multipliers : 
+	                11x48  Multipliers := 2     
+	                13x48  Multipliers := 2     
++---Muxes : 
+	   2 Input    160 Bit        Muxes := 12    
+	  32 Input    160 Bit        Muxes := 2     
+	   2 Input     48 Bit        Muxes := 7     
+	   2 Input     18 Bit        Muxes := 6     
+	   5 Input     18 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 2     
+	   7 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 4     
+	  12 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 31    
+	   7 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ad_sub 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module Dtrigger 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module uart_rx_byte 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 9     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 9     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   7 Input     12 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+Module uart_rx_data 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	              160 Bit    Registers := 1     
+	               40 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    160 Bit        Muxes := 12    
+	  32 Input    160 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 16    
+Module fft_test 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 6     
+	   5 Input     18 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module CAL_POW 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     48 Bit       Adders := 1     
+Module F_FRE_POW 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 12    
+	               16 Bit    Registers := 8     
+	                2 Bit    Registers := 1     
++---Multipliers : 
+	                11x48  Multipliers := 2     
+	                13x48  Multipliers := 2     
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 7     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+Module majority_vote 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module dpll_reset 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module dpll__xdcDup__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     40 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module dpll 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     40 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "start_bit" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Pword" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uart_BUF" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_axis_data_tvalid1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_axis_data_last1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'index2_reg[15:0]' into 'index2_reg[15:0]' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/F_FRE_POW.v:52]
+INFO: [Synth 8-4471] merging register 'index2_reg[15:0]' into 'index2_reg[15:0]' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/F_FRE_POW.v:52]
+INFO: [Synth 8-4471] merging register 'cur_index_reg[15:0]' into 'cur_index_reg[15:0]' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/F_FRE_POW.v:50]
+INFO: [Synth 8-4471] merging register 'cur_index_reg[15:0]' into 'cur_index_reg[15:0]' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/F_FRE_POW.v:50]
+INFO: [Synth 8-4471] merging register 'index1_reg[15:0]' into 'index1_reg[15:0]' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/F_FRE_POW.v:51]
+INFO: [Synth 8-4471] merging register 'index1_reg[15:0]' into 'index1_reg[15:0]' [D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.srcs/sources_1/new/F_FRE_POW.v:51]
+DSP Report: Generating DSP fword_n2, operation Mode is: (A:0xa7c538)*B.
+DSP Report: operator fword_n2 is absorbed into DSP fword_n2.
+DSP Report: Generating DSP fword_n1, operation Mode is: (A:0xa7c538)*B.
+DSP Report: operator fword_n1 is absorbed into DSP fword_n1.
+WARNING: [Synth 8-3917] design TOP has port DA2_out[5] driven by constant 0
+WARNING: [Synth 8-3917] design TOP has port DA2_out[4] driven by constant 0
+WARNING: [Synth 8-3917] design TOP has port DA2_out[3] driven by constant 0
+WARNING: [Synth 8-3917] design TOP has port DA2_out[2] driven by constant 0
+WARNING: [Synth 8-3917] design TOP has port DA2_out[1] driven by constant 0
+WARNING: [Synth 8-3917] design TOP has port DA2_out[0] driven by constant 0
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\rx_inst/byte/bps_DR_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\rx_inst/byte/bps_DR_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rx_inst/byte/bps_DR_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\rx_inst/byte/bps_DR_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rx_inst/byte/bps_DR_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\rx_inst/byte/bps_DR_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\rx_inst/byte/bps_DR_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rx_inst/byte/bps_DR_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rx_inst/byte/bps_DR_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rx_inst/byte/bps_DR_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rx_inst/byte/bps_DR_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rx_inst/byte/bps_DR_reg[11] )
+WARNING: [Synth 8-3332] Sequential element (rx_inst/byte/bps_DR_reg[11]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (rx_inst/byte/bps_DR_reg[10]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (rx_inst/byte/bps_DR_reg[9]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (rx_inst/byte/bps_DR_reg[8]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (rx_inst/byte/bps_DR_reg[7]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (rx_inst/byte/bps_DR_reg[6]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (rx_inst/byte/bps_DR_reg[5]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (rx_inst/byte/bps_DR_reg[4]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (rx_inst/byte/bps_DR_reg[3]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (rx_inst/byte/bps_DR_reg[2]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (rx_inst/byte/bps_DR_reg[1]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (rx_inst/byte/bps_DR_reg[0]) is unused and will be removed from module TOP.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dpll_inst0/i_0/\Pword_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dpll_inst0/i_0/\Pword_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dpll_inst0/i_0/\Pword_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dpll_inst0/i_0/\Pword_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dpll_inst1/i_0/\Pword_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dpll_inst1/i_0/\Pword_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dpll_inst1/i_0/\Pword_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dpll_inst1/i_0/\Pword_reg[3] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 875.059 ; gain = 523.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|TOP         | (A:0xa7c538)*B | 24     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|TOP         | (A:0xa7c538)*B | 24     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_clk_wiz_0/clk_out1' to pin 'u_clk_wiz_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'u_clk_wiz_0/clk_in1' to 'u_sys_ibuf/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_clk_wiz_1/clk_out1' to pin 'u_clk_wiz_1/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'u_clk_wiz_1/clk_in1' to 'u_sys_ibuf/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_clk_wiz_1/clk_out2' to pin 'u_clk_wiz_1/bbstub_clk_out2/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'u_clk_wiz_1/clk_in1' to 'u_sys_ibuf/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_clk_wiz_1/clk_out3' to pin 'u_clk_wiz_1/bbstub_clk_out3/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'u_clk_wiz_1/clk_in1' to 'u_sys_ibuf/O'
+INFO: [Synth 8-5819] Moved 6 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 911.547 ; gain = 559.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 916.477 ; gain = 564.852
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 940.453 ; gain = 588.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 940.453 ; gain = 588.828
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 940.453 ; gain = 588.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 940.453 ; gain = 588.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 940.453 ; gain = 588.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 940.453 ; gain = 588.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 940.453 ; gain = 588.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |xfft_0         |         1|
+|2     |mult_gen_1     |         4|
+|3     |fir_compiler_0 |         4|
+|4     |cordic_0       |         2|
+|5     |dds_compiler_0 |         4|
+|6     |ila_0          |         1|
+|7     |clk_wiz_0      |         1|
+|8     |clk_wiz_1      |         1|
+|9     |mult_gen_0     |         2|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |clk_wiz_0         |     1|
+|2     |clk_wiz_1         |     1|
+|3     |cordic_0          |     1|
+|4     |cordic_0__2       |     1|
+|5     |dds_compiler_0    |     1|
+|6     |dds_compiler_0__4 |     1|
+|7     |dds_compiler_0__5 |     1|
+|8     |dds_compiler_0__6 |     1|
+|9     |fir_compiler_0    |     1|
+|10    |fir_compiler_0__4 |     1|
+|11    |fir_compiler_0__5 |     1|
+|12    |fir_compiler_0__6 |     1|
+|13    |ila_0             |     1|
+|14    |mult_gen_0        |     1|
+|15    |mult_gen_0__1     |     1|
+|16    |mult_gen_1        |     1|
+|17    |mult_gen_1__4     |     1|
+|18    |mult_gen_1__5     |     1|
+|19    |mult_gen_1__6     |     1|
+|20    |xfft_0            |     1|
+|21    |CARRY4            |   313|
+|22    |DSP48E1           |     2|
+|23    |LUT1              |    25|
+|24    |LUT2              |   769|
+|25    |LUT3              |   517|
+|26    |LUT4              |   559|
+|27    |LUT5              |    46|
+|28    |LUT6              |   127|
+|29    |MUXF7             |     1|
+|30    |FDCE              |   265|
+|31    |FDRE              |   843|
+|32    |FDSE              |     7|
+|33    |IBUF              |    10|
+|34    |IBUFG             |     1|
+|35    |OBUF              |    25|
++------+------------------+------+
+
+Report Instance Areas: 
++------+-------------------+-----------------+------+
+|      |Instance           |Module           |Cells |
++------+-------------------+-----------------+------+
+|1     |top                |                 |  4136|
+|2     |  u_ad_sub         |ad_sub           |     9|
+|3     |  u_fft            |fft_test         |   126|
+|4     |  u_F_FRE_POW      |F_FRE_POW        |  2580|
+|5     |  u1_majority_vote |majority_vote    |    18|
+|6     |  u_dpll_reset     |dpll_reset       |    48|
+|7     |  dpll_inst0       |dpll__xdcDup__1  |   418|
+|8     |  dpll_inst1       |dpll             |   418|
+|9     |  rx_inst          |uart_rx_data     |   304|
+|10    |    byte           |uart_rx_byte     |   192|
+|11    |      D1           |Dtrigger         |     3|
+|12    |      D2           |Dtrigger_0       |     1|
+|13    |  u2_majority_vote |majority_vote__2 |    15|
+|14    |  u_CAL_POW        |CAL_POW          |   156|
++------+-------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 940.453 ; gain = 588.828
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 940.453 ; gain = 217.566
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 940.453 ; gain = 588.828
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 317 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 940.453 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFG => IBUF: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+137 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 940.453 ; gain = 590.527
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 940.453 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/a_My_projects/myvivadoprojects/07/23h - 6/fft_test.runs/synth_1/TOP.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TOP_utilization_synth.rpt -pb TOP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 26 23:09:30 2026...
