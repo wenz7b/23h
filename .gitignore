@@ -1,57 +1,44 @@
-# ============ ??? ============
-# ??????/????????
+# Vivado 工程生成的临时/缓存目录
+.Xil/
+*.cache
+*.hw
+*.ip_user_files
+*.runs
+*.sim
+*.gen
+
+# Vivado 日志 / 启动文件
+*.log
+*.jou
+*.vpp
+*.str
+*_backup.*
+ip_upgrade.log
+
+# IP 编译产物（保留 .xci 源配置，忽略生成的 dcp / 网表）
+*.dcp
+*.ncd
+*.ngc
+*.bit
+*.bin
+*.ltx
+
+# 综合 / 实现过程文件
+*.rpt
+*.twr
+*.npc
+*.bmm
+
+# 仿真产物
+xsim.dir/
+*.vcd
+*.wdb
+*.wcfg
+
+# 波形本地配置
+*.wdb.backup
+
+# 系统文件
 Thumbs.db
 Desktop.ini
 .DS_Store
-*.tmp
-*.bak
-*.swp
-*.swo
-
-# ============ 25g-csrc (STM32F4 / Keil MDK) ============
-# ?????????
-25g-csrc/OBJ/
-25g-csrc/Listings/
-25g-csrc/USER/DebugConfig/
-25g-csrc/USER/RTE/
-
-# Keil ???????
-*.o
-*.d
-*.crf
-*.axf
-*.hex
-*.bin
-*.htm
-*.lnp
-*.map
-*.lst
-*.sct
-*.dep
-*.build_log.htm
-
-# ????/????????????????????
-25g-csrc/USER/JLinkLog.txt
-25g-csrc/USER/JLinkSettings.ini
-
-# Keil ???????/???????????????????????????
-*.uvoptx
-*.uvguix
-*.uvguix.*
-
-# ============ 25g-vsrc (Xilinx Vivado) ============
-# Vivado ?????/??????????????????
-25g-vsrc/.Xil/
-25g-vsrc/*.cache/
-25g-vsrc/*.hw/
-25g-vsrc/*.ip_user_files/
-25g-vsrc/*.runs/
-25g-vsrc/*.sim/
-
-# Vivado ???/?糡???
-25g-vsrc/*.jou
-25g-vsrc/*.log
-25g-vsrc/*.backup.jou
-25g-vsrc/*.backup.log
-25g-vsrc/*_pid*.str
-25g-vsrc/vivado_*.str
